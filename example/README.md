@@ -3,7 +3,7 @@
 Minimal Flutter app that:
 
 1. Opens a small **sqflite** database with table `greeting`.
-2. Calls **`registerSqliteInspector`** in debug/profile (not web) so the **sqlite_inspector** DevTools extension can attach.
+2. Calls **`registerSqliteInspector`** in debug/profile (not web) so the **sqflite_db_inspector** DevTools extension can attach.
 
 This folder is what appears on **pub.dev → Example** after the package is published.
 
@@ -25,7 +25,7 @@ flutter run
 
    ```yaml
    extensions:
-     - sqlite_inspector: true
+     - sqflite_db_inspector: true
    ```
 
-4. Open the **sqlite_inspector** panel and browse table `greeting`.
+4. Open the **sqflite_db_inspector** panel and browse table `greeting`.

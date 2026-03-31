@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:path/path.dart' as p;
 import 'package:path_provider/path_provider.dart';
 import 'package:sqflite/sqflite.dart';
-import 'package:sqlite_inspector/sqlite_inspector.dart';
+import 'package:sqflite_db_inspector/sqflite_db_inspector.dart';
 
 /// Opens (and creates) a tiny demo database used by Flutter DevTools.
 Future<Database> _openDemoDb() async {
@@ -16,7 +16,7 @@ Future<Database> _openDemoDb() async {
       await db.execute(
         'CREATE TABLE greeting (id INTEGER PRIMARY KEY AUTOINCREMENT, message TEXT NOT NULL)',
       );
-      await db.insert('greeting', {'message': 'Hello from sqlite_inspector example'});
+      await db.insert('greeting', {'message': 'Hello from sqflite_db_inspector example'});
     },
   );
 }
@@ -31,7 +31,7 @@ Future<Database> getDemoDatabase() async {
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  // Required for the sqlite_inspector DevTools extension (debug / profile only).
+  // Required for the sqflite_db_inspector DevTools extension (debug / profile only).
   if (!kReleaseMode && !kIsWeb) {
     registerSqliteInspector(getDemoDatabase);
   }
@@ -49,7 +49,7 @@ class SqliteInspectorExampleApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'sqlite_inspector example',
+      title: 'sqflite_db_inspector example',
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
@@ -65,7 +65,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('sqlite_inspector example')),
+      appBar: AppBar(title: const Text('sqflite_db_inspector example')),
       body: ListView(
         padding: const EdgeInsets.all(20),
         children: [
@@ -83,7 +83,7 @@ class HomePage extends StatelessWidget {
             const Text(
               '1. Run in debug mode.\n'
               '2. Open Flutter DevTools for this app.\n'
-              '3. Open the sqlite_inspector extension (enable it in devtools_options.yaml if needed).\n'
+              '3. Open the sqflite_db_inspector extension (enable it in devtools_options.yaml if needed).\n'
               '4. You should see table greeting with one row.',
             ),
             const SizedBox(height: 16),

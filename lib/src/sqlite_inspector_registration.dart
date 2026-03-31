@@ -5,14 +5,14 @@ import 'package:flutter/foundation.dart';
 import 'package:sqflite/sqflite.dart';
 
 /// VM service extension name (must match the DevTools web client).
-const sqliteInspectorExtensionName = 'ext.sqlite_inspector.inspect';
+const sqliteInspectorExtensionName = 'ext.sqflite_db_inspector.inspect';
 
 /// Alias for SQLite [rowid] in SELECT results (hidden from table UI columns).
 const sqliteInspectorRowidKey = '__sqlite_rowid__';
 
 Future<Database> Function()? _getDatabase;
 
-/// Registers the VM service extension the **sqlite_inspector** DevTools extension
+/// Registers the VM service extension the **sqflite_db_inspector** DevTools extension
 /// uses to talk to your app’s sqflite [Database].
 ///
 /// **Without this call, the DevTools panel cannot load tables or rows** (you may
@@ -72,7 +72,7 @@ bool _columnLooksLikeBlob(String? declaredType) {
 Object? _jsonToSqlValue(Object? decoded, {required bool blobColumn}) {
   if (decoded == null) return null;
   if (blobColumn) {
-    throw ArgumentError('BLOB columns cannot be edited from sqlite_inspector');
+    throw ArgumentError('BLOB columns cannot be edited from sqflite_db_inspector');
   }
   return decoded;
 }

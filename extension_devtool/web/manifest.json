@@ -1,6 +1,6 @@
 {
-    "name": "sqlite_inspector_devtool",
-    "short_name": "sqlite_inspector_devtool",
+    "name": "sqflite_db_inspector_devtool",
+    "short_name": "sqflite_db_inspector_devtool",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

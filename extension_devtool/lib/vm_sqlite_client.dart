@@ -4,10 +4,10 @@ import 'package:devtools_app_shared/utils.dart';
 import 'package:devtools_extensions/devtools_extensions.dart';
 import 'package:vm_service/vm_service.dart';
 
-/// Must match [sqliteInspectorExtensionName] in package:sqlite_inspector.
-const _kExtensionMethod = 'ext.sqlite_inspector.inspect';
+/// Must match [sqliteInspectorExtensionName] in package:sqflite_db_inspector.
+const _kExtensionMethod = 'ext.sqflite_db_inspector.inspect';
 
-/// Must match [sqliteInspectorRowidKey] in package:sqlite_inspector.
+/// Must match [sqliteInspectorRowidKey] in package:sqflite_db_inspector.
 const sqliteInspectorRowidColumn = '__sqlite_rowid__';
 
 /// Row filter passed to the VM `select` action.

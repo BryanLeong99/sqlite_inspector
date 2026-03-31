@@ -1,6 +1,6 @@
 name: sqlite_inspector_example
 description: >
-  Minimal host app for package sqlite_inspector — opens sqflite and registers
+  Minimal host app for package sqflite_db_inspector — opens sqflite and registers
   the DevTools VM hook. Shown on pub.dev under the Example tab.
 publish_to: 'none'
 version: 1.0.0+1
@@ -15,7 +15,7 @@ dependencies:
   path: ^1.9.0
   path_provider: ^2.1.0
   sqflite: ^2.3.3+1
-  sqlite_inspector:
+  sqflite_db_inspector:
     path: ../
 
 dev_dependencies:
