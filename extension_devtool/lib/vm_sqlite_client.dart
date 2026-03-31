@@ -152,8 +152,8 @@ class VmSqliteClient {
       'column': column,
       'value': value,
       'hasRowid': hasRowid,
-      'rowid': ?rowid,
-      'pk': ?pk,
+      'rowid': rowid,
+      'pk': pk,
     }..removeWhere((k, v) => v == null);
     final r = await _call({
       'action': 'update_cell',
@@ -174,8 +174,8 @@ class VmSqliteClient {
   }) async {
     final payload = <String, Object?>{
       'hasRowid': hasRowid,
-      'rowid': ?rowid,
-      'pk': ?pk,
+      'rowid': rowid,
+      'pk': pk,
     }..removeWhere((k, v) => v == null);
     final r = await _call({
       'action': 'delete_row',

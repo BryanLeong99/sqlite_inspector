@@ -22,7 +22,7 @@ See also the dartdoc on `registerSqliteInspector` in the package API (IDE hover)
 
 ```yaml
 dependencies:
-  sqflite_db_inspector: ^0.1.2
+  sqflite_db_inspector: ^0.1.3
 ```
 
 ### Registration snippet
@@ -49,7 +49,7 @@ extensions:
   - sqflite_db_inspector: true
 ```
 
-## Build the embedded web UI
+<!-- ## Build the embedded web UI
 
 Required before `pub publish`, or when `extension/devtools/build/` is empty:
 
@@ -69,7 +69,7 @@ FLUTTER="fvm flutter" DART="fvm dart" ./tool/build_sqlite_devtools_extension.sh
 1. Use this folder as the repository root.
 2. Run the build script, then `dart pub publish --dry-run` / `dart pub publish`.
 
-See [CHANGELOG.md](CHANGELOG.md).
+See [CHANGELOG.md](CHANGELOG.md). -->
 
 ## License
 

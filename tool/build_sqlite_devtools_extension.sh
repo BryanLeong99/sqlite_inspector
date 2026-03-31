@@ -7,6 +7,17 @@ set -euo pipefail
 PKG_ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 FLUTTER="${FLUTTER:-flutter}"
 DART="${DART:-dart}"
+# devtools_extensions spawns `flutter build web`; it must see the same SDK as $FLUTTER.
+case "$FLUTTER" in
+  */bin/flutter)
+    export PATH="$(dirname "$FLUTTER"):${PATH}"
+    ;;
+esac
+case "$DART" in
+  */bin/dart)
+    export PATH="$(dirname "$DART"):${PATH}"
+    ;;
+esac
 cd "$PKG_ROOT/extension_devtool"
 $FLUTTER pub get
 $DART run devtools_extensions build_and_copy --source=. --dest=../extension/devtools

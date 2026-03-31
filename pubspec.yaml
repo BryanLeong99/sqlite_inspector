@@ -2,7 +2,7 @@ name: sqflite_db_inspector
 description: >
   Flutter DevTools extension and VM service hook to browse sqflite databases
   in any Flutter app (tables, schema, row preview, live refresh).
-version: 0.1.2
+version: 0.1.3
 homepage: https://github.com/BryanLeong99/sqlite_inspector#readme
 repository: https://github.com/BryanLeong99/sqlite_inspector
 issue_tracker: https://github.com/BryanLeong99/sqlite_inspector/issues

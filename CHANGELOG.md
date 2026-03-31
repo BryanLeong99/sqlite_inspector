@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.3
+
+- Rebuilt DevTools extension for `ext.sqflite_db_inspector.inspect`; build script fixes PATH when using a full `flutter` path; web build avoids experimental null-aware map literals.
+
 ## 0.1.2
 
 - Lowered minimum Dart/Flutter SDK constraints for the main package; relaxed dev lints where needed.
