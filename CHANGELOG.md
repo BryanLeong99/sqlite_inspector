@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.2
+
+- Lowered minimum Dart/Flutter SDK constraints for the main package; relaxed dev lints where needed.
+
 ## 0.1.1
 
 - Documentation updates.

@@ -22,7 +22,7 @@ See also the dartdoc on `registerSqliteInspector` in the package API (IDE hover)
 
 ```yaml
 dependencies:
-  sqflite_db_inspector: ^0.1.1
+  sqflite_db_inspector: ^0.1.2
 ```
 
 ### Registration snippet
