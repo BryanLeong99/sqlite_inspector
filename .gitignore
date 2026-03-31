@@ -1,0 +1,20 @@
+# Dart / Flutter
+.dart_tool/
+.packages
+pubspec.lock
+build/
+
+# Built DevTools web bundle (regenerate with tool/build_extension.sh)
+extension/devtools/build/
+
+# Extension web app tooling
+extension_devtool/.dart_tool/
+extension_devtool/build/
+extension_devtool/pubspec.lock
+
+# IDE
+.idea/
+*.iml
+
+# OS
+.DS_Store

@@ -1,0 +1,2 @@
+# Include built web assets when publishing even if gitignored locally.
+!build

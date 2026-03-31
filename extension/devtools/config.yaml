@@ -1,0 +1,5 @@
+name: sqlite_inspector
+issueTracker: https://github.com/your-username/sqlite_inspector/issues
+version: 0.1.0
+materialIconCodePoint: '0xe1db'
+requiresConnection: true

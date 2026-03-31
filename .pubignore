@@ -1,0 +1,2 @@
+# Keep local test output out of the pub.dev tarball.
+build/
