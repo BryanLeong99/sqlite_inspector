@@ -21,8 +21,8 @@ See also the dartdoc on `registerSqliteInspector` in the package API (IDE hover)
 ## Add to your app
 
 ```yaml
-dev_dependencies:
-  sqflite_db_inspector: ^0.1.4
+dependencies:
+  sqflite_db_inspector: ^0.1.5
 ```
 
 ### Registration snippet

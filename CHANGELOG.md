@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.1.5
+
+- README: document `sqflite_db_inspector` under `dependencies` again (not `dev_dependencies`).
+
 ## 0.1.4
 
 - Bump version for dev dependency usage in README and pubspec.
